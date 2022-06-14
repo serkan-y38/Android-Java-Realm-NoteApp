@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteAct">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgraundphoto8">
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/addLinear"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="#325A83"
+                android:text="Note Name"
+                android:textSize="20dp"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1">
+            </TextView>
+
+            <EditText
+                android:hint="Required"
+                android:textColor="#FF325A83"
+                android:textColorHint="#FF325A83"
+                android:id="@+id/addNoteName"
+                android:textSize="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="#FF325A83"
+                android:text="Topic"
+                android:textSize="20dp"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1">
+            </TextView>
+
+            <EditText
+                android:hint="Opsionel"
+                android:textColor="#FF325A83"
+                android:textColorHint="#FF325A83"
+                android:id="@+id/addTopicName"
+                android:textSize="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+            </EditText>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:inputType="textMultiLine"
+        android:textColor="#FF325A83"
+        android:textColorHint="#FF325A83"
+        android:layout_marginTop="20dp"
+        android:hint="Description (Required)"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addLinear"
+        android:id="@+id/addDescription">
+    </EditText>
+
+    <Button
+        android:id="@+id/addNoteButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/addDescription"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_background2"
+        android:text="add">
+    </Button>
+
+</RelativeLayout>

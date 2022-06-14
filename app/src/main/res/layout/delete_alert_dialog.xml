@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alert_back_graund">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:id="@+id/warningT1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#FFC107"
+        android:text="WARNNING">
+    </TextView>
+
+    <TextView
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/warningT2"
+        android:layout_below="@id/warningT1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="This Action Cannot Undo">
+    </TextView>
+
+    <TextView
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/warningT3"
+        android:layout_below="@id/warningT2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="Make Sure Before Touch The Delete Button">
+    </TextView>
+
+    <ImageButton
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_baseline_delete_forever_24"
+        android:layout_below="@id/warningT3"
+        android:id="@+id/deleteButtonAlert"
+        android:layout_marginBottom="30dp">
+    </ImageButton>
+
+</RelativeLayout>
